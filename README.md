@@ -14,6 +14,6 @@ Run Note:
   
           python runnerV2.py
           
-  3.The output will be shown in the csv file and also in the stdout
+  3.The output will be shown in the csv file(uncomment in the code) and also in the stdout
   
   
