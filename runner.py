@@ -20,7 +20,7 @@ def getdata(hash,apikey):
 with open('hashes.txt', 'r+') as f:
 	lines = [line.rstrip('\n') for line in open('hashes.txt')]
 
-apikeys=['08074dd7e431fa9f6bc342947e4707099c4adcfb4b72090286ed24fc9437f95f','924d105b1634c233f2f72d890fd1340b98cefafe6ef6939f2c88e9cf4eecdf47']
+apikeys=['','']#Place the Api keys here
 if len(apikeys) <= 6 :
 	waitime = (60 - len(apikeys) * 10)
 else:
