@@ -11,7 +11,7 @@ Run Note:
   
   2. Run using command 
   
-          python runner.py
+          python runnerV2.py
           
   3.THe output will be shown in the csv file and also in the stdout
   
