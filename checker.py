@@ -10,7 +10,7 @@ for hash in lines:
 		print("----Limit Reached----")
 		time.sleep(50)
 	
-	params = {'apikey': '08074dd7e431fa9f6bc342947e4707099c4adcfb4b72090286ed24fc9437f95f', 'resource':hash}
+	params = {'apikey': '', 'resource':hash}
 	headers = {"Accept-Encoding": "gzip, deflate","User-Agent" : "gzip,  My Python requests library example client or username"}
 	success = False
 	sample_info={}
@@ -32,17 +32,4 @@ for hash in lines:
 		print("Not Found in VT")
 	
 	
-	'''
-	response = requests.get('https://www.virustotal.com/vtapi/v2/file/report',params=params, headers=headers)
-	print(response)
-	json_response = response.json()
 	
-	
-
-	if json_response["response_code"]:
-		detect=json_response["positives"]
-		total=json_response["total"]
-		print(hash+" detected: "+str(detect)+" total: "+str(total))
-	else:
-		print(json_response)
-	'''
