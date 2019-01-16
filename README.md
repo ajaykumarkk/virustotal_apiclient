@@ -3,11 +3,13 @@ This is a python implementation for getting virus total scores for Hashes only.
 Support for multiple api keys to bypass the per minute limit
 
 Pre-Req:
+
   1. Requests
   
           pip install requests
  
 Run Note:
+
   1. Place the hashes in the hashes.txt file 
   
   2. Place the Virustotal apikeys in a text file called apikeys.txt one in each line
