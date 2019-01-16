@@ -91,5 +91,5 @@ try:
 			time.sleep(1)
 except GetOutOfLoop:
 	pass
-print("unprocessed hashes "+unprocessed )		
-print("Hashes in Not in VT"+notinvt)
+print("unprocessed hashes "+str(unprocessed )	)
+print("Hashes in Not in VT"+str(notinvt))
