@@ -29,7 +29,8 @@ def getdata(hash,apikey):
 with open('hashes.txt', 'r+') as f:
 	lines = [line.rstrip('\n') for line in open('hashes.txt')]
 
-apikeys=['','','']
+with open('apikeys.txt', 'r') as f:
+	apikeys = [line.rstrip('\n') for line in open('apikeys.txt')]
 if len(apikeys) <= 6 :
 	waitime = (60 - len(apikeys) * 4)
 else:
@@ -91,5 +92,5 @@ try:
 			time.sleep(1)
 except GetOutOfLoop:
 	pass
-print("unprocessed hashes "+str(unprocessed )	)
+print("unprocessed hashes "+str(unprocessed ))
 print("Hashes in Not in VT"+str(notinvt))
