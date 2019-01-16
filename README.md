@@ -10,7 +10,7 @@ Pre-Req:
 Run Note:
   1. Place the hashes in the hashes.txt file 
   
-  2.Place the Virustotal apikeys in a text file called apikeys.txt one in each line
+  2. Place the Virustotal apikeys in a text file called apikeys.txt one in each line
   
   3. Run using command 
   
