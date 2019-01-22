@@ -34,7 +34,7 @@ with open('apikeys.txt', 'r') as f:
 if len(apikeys) <= 14 :
 	waitime = (60 - len(apikeys) * 4)
 else:
-	waitime = 0
+	waitime = 3
 csv_handle=open('output.csv','w')
 
 flag=0
