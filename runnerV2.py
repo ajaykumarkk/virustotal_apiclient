@@ -31,7 +31,7 @@ with open('hashes.txt', 'r+') as f:
 
 with open('apikeys.txt', 'r') as f:
 	apikeys = [line.rstrip('\n') for line in open('apikeys.txt')]
-if len(apikeys) <= 6 :
+if len(apikeys) <= 15 :
 	waitime = (60 - len(apikeys) * 4)
 else:
 	waitime = 0
