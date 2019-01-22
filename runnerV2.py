@@ -80,12 +80,12 @@ try:
 					sample_info["positives"] = response_dict.get("positives")
 					sample_info["total"] = response_dict.get("total")
 					#csv_handle.write(sample_info["md5"]+","+str(sample_info["positives"])+","+str(sample_info["total"]))
-					print(sample_info["md5"]+","+str(sample_info["positives"])+","+str(sample_info["total"]))
+					print(sample_info["md5"]+","+str(sample_info["positives"])+","+str(sample_info["total"])+"-->"+str(count),end = '\n')
 					#csv_handle.write('\n')
 				else:
 					print("Unknown Error for hash "+hash)
 					unprocessed.append(hash)
-			print("API KEY : "+str(api_key)+" has ran 4 times.. Changing APi Key..")
+			print("Api Key has ran 4 times.. Changing APi Key..\n")
 		print("WaitTime is "+str(waitime)+" Seconds")
 		for i in range(1,waitime):
 			print(i,end="\r")
