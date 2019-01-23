@@ -8,7 +8,7 @@ Pre-Req:
   
           pip install requests
  
-Run Note:
+Instructions:
 
   1. Place the hashes in the hashes.txt file 
   
