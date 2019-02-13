@@ -79,9 +79,9 @@ try:
 					# AV matches
 					sample_info["positives"] = response_dict.get("positives")
 					sample_info["total"] = response_dict.get("total")
-					#csv_handle.write(sample_info["md5"]+","+str(sample_info["positives"])+","+str(sample_info["total"]))
+					csv_handle.write(sample_info["md5"]+","+str(sample_info["positives"])+","+str(sample_info["total"]))
 					print(sample_info["md5"]+","+str(sample_info["positives"])+","+str(sample_info["total"])+"-->"+str(count),end = '\n')
-					#csv_handle.write('\n')
+					csv_handle.write('\n')
 				else:
 					print("Unknown Error for hash "+hash)
 					unprocessed.append(hash)
@@ -91,6 +91,6 @@ try:
 			print(i,end="\r")
 			time.sleep(1)
 except GetOutOfLoop:
-	pass
+	csv_handle.close()
 print("unprocessed hashes "+str(unprocessed ))
 print("Hashes in Not in VT"+str(notinvt))
