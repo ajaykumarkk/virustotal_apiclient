@@ -2,13 +2,13 @@
 This is a python implementation for getting virus total scores for Hashes only.
 Support for multiple api keys to bypass the per minute limit
 
-Pre-Req:
+## Pre-Req:
 
   1. Requests
   
           pip install requests
  
-Instructions:
+## Instructions:
 
   1. Place the hashes in the hashes.txt file 
   
