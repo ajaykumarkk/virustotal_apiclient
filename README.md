@@ -20,4 +20,9 @@ Support for multiple api keys to bypass the per minute limit
           
   4.The output will be shown in the csv file(uncomment in the code) and also in the stdout
   
-  
+  ## For multiprocess 
+    
+     Run using command 
+          
+            python runnerV3.py
+          
