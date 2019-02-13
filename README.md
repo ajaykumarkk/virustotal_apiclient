@@ -22,7 +22,6 @@ Support for multiple api keys to bypass the per minute limit
   
   ## For multiprocess 
     
-     Run using command 
           
             python runnerV3.py
           
