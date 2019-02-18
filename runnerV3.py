@@ -15,7 +15,7 @@ def chunkIt(seq, num):
 		last += avg
 	return out
 
-def mergeadnremove(fnm):
+def mergeadnremoveout(fnm):
 	fout=open(fnm+".csv","a")
 	for i in range(0,len(api_keys_list)):
 		f = open(fnm+str(i)+".csv")
@@ -23,6 +23,16 @@ def mergeadnremove(fnm):
 			 fout.write(line)
 		f.close()
 		os.remove(fnm+str(i)+".csv")
+	fout.close()
+	
+def mergeadnremoveunp(fnm):
+	fout=open(fnm+".txt","a")
+	for i in range(0,len(api_keys_list)):
+		f = open(fnm+str(i)+".txt")
+		for line in f:
+			 fout.write(line)
+		f.close()
+		os.remove(fnm+str(i)+".txt")
 	fout.close()
 	
 if __name__ == '__main__':
@@ -45,7 +55,7 @@ if __name__ == '__main__':
 		processlist.append(p1)
 	for p in processlist:
 		p.join()
-	mergeadnremove("output")
-	mergeadnremove("unprocessed")
+	mergeadnremoveout("output")
+	mergeadnremoveunp("unprocessed")
 		
 	
