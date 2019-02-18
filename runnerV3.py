@@ -16,7 +16,10 @@ def chunkIt(seq, num):
 	return out
 
 def mergeadnremoveout(fnm):
-	fout=open(fnm+".csv","a")
+	fout=open(fnm+".csv","w")
+	print("Creating output...")
+	fout.write("hash,positives,total")
+	fout.write('\n')
 	for i in range(0,len(api_keys_list)):
 		f = open(fnm+str(i)+".csv")
 		for line in f:
@@ -26,7 +29,7 @@ def mergeadnremoveout(fnm):
 	fout.close()
 	
 def mergeadnremoveunp(fnm):
-	fout=open(fnm+".txt","a")
+	fout=open(fnm+".txt","a") 
 	for i in range(0,len(api_keys_list)):
 		f = open(fnm+str(i)+".txt")
 		for line in f:
