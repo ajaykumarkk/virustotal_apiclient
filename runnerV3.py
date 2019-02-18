@@ -1,3 +1,8 @@
+#
+# Name...............Virus Total API CLient
+# Author.............Ajay Kumar K K
+#               
+#
 import sys
 import os
 import time
