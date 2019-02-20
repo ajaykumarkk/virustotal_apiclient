@@ -71,6 +71,8 @@ def checkVT(lines,apikeys,id):
 					elif isinstance(response_dict,dict) and response_dict.get("response_code") == 0:
 						#print("Not in VT for hash :"+str(hash))
 						notinvt.append(hash)
+						csv_handle.write(hash+",0,0")
+						csv_handle.write('\n')
 					elif isinstance(response_dict,dict) and response_dict.get("response_code") == -2:
 						print("In queue for scanning")
 					elif isinstance(response_dict,dict) and response_dict.get("response_code") == 1:
